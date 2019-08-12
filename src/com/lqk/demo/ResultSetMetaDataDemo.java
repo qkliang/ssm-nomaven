@@ -15,7 +15,7 @@ import com.lqk.tools.DataBaseConnection;
  */
 public class ResultSetMetaDataDemo {
 	public static void main(String[] args) throws Exception {
-		DataBaseConnection db = new DataBaseConnection();
+		DataBaseConnection db = DataBaseConnection.getInstance();
 		Connection conn = db.getConn();
 		String sql = "select id,lastName,gender,email from employee";
 		ResultSet rs = conn.createStatement().executeQuery(sql);
@@ -31,7 +31,8 @@ public class ResultSetMetaDataDemo {
 			}
 			list.add(map);
 		}
-		System.out.println(list);
+
+//		System.out.println(list);
 		for(Map<String,String> map : list){
 			System.out.println(map.get("id"));
 			System.out.println(map.get("lastName"));
@@ -39,5 +40,12 @@ public class ResultSetMetaDataDemo {
 			System.out.println(map.get("email"));
 			System.out.println("------------------------------");
 		}
+		db.close();
+		sql = "select 1+1 from dual";
+		rs = db.getConn().createStatement().executeQuery(sql);
+		if(rs.next()){
+			System.out.println("连接成功");
+		}
+		db.close();
 	}
 }
