@@ -9,7 +9,10 @@ import java.util.List;
 import java.util.Map;
 
 import com.lqk.tools.DataBaseConnection;
-
+/**
+ * @author lqk
+ * @date 2019/08/12
+ */
 public class ResultSetMetaDataDemo {
 	public static void main(String[] args) throws Exception {
 		DataBaseConnection db = new DataBaseConnection();
@@ -20,7 +23,7 @@ public class ResultSetMetaDataDemo {
 		ResultSetMetaData rsmd = rs.getMetaData();
 		int cols = rsmd.getColumnCount();
 		while(rs.next()){
-			Map<String,String> map = new HashMap<String,String>();
+			Map<String,String> map = new HashMap<String,String>(16);
 			for(int i = 1;i<=cols;i++){
 				String colName = rsmd.getColumnName(i);
 				String value = rs.getString(i);

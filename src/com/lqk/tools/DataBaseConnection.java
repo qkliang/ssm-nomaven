@@ -5,7 +5,10 @@ import java.sql.Connection;
 import java.util.Properties;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-
+/**
+ * @author lqk
+ * @date 2019/08/12
+ */
 public class DataBaseConnection {
 	private ComboPooledDataSource cpds;
 	private Connection conn;
