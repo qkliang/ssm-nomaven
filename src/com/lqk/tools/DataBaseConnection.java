@@ -4,7 +4,6 @@ import java.beans.PropertyVetoException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Properties;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -43,8 +42,7 @@ public class DataBaseConnection {
 		}
 	}
 	public Connection getConn(){
-		try {
-			
+		try {			
 			conn = cpds.getConnection();
 			return conn;
 		} catch (Exception e) {
