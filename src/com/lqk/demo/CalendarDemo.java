@@ -2,7 +2,10 @@ package com.lqk.demo;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
+/**
+ * @author liangqiankun
+ * @date 2019年9月10日
+ */
 public class CalendarDemo {
 	public static void main(String[] args) {
 		String inputDate = "2019/09/10";
