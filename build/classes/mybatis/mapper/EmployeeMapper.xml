@@ -6,11 +6,11 @@
 
 	<!-- public Employee getEmpById(Integer id); -->
 	<select id="getEmpById" resultType="com.lqk.mybatis.bean.Employee">
-		select * from tbl_employee where id=#{id}
+		select * from emp where id=#{id}
 	</select>
 	
 	<!--public List<Employee> getEmps();  -->
 	<select id="getEmps" resultType="com.lqk.mybatis.bean.Employee">
-		select * from emps
+		select * from emp
 	</select>
 </mapper>
