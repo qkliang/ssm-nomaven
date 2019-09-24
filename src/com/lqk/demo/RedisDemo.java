@@ -1,5 +1,6 @@
 package com.lqk.demo;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -20,6 +21,10 @@ public class RedisDemo {
 			Map.Entry<String, String> entry = iterator.next();
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
+		Map<String, String> emp = new HashMap<String,String>(16);
+		emp.put("id", "0001");
+		emp.put("name", "jock");
+		jedis.hmset("emp", emp);
 		
 		
 	}
