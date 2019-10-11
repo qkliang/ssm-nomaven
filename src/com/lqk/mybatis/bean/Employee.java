@@ -2,7 +2,7 @@ package com.lqk.mybatis.bean;
 
 /**
  * @author lqk
- * @date 2019Äê8ÔÂ11ÈÕ
+ * @date 2019/08/11
  */
 
 public class Employee {
