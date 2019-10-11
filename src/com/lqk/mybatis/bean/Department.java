@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * @author lqk
- * @date 2019Äê8ÔÂ11ÈÕ
+ * @date 2019/08/11
  */
 public class Department {
 	private static final long serialVersionUID = 1L;
