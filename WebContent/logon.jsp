@@ -13,7 +13,7 @@
 <body>
 	<h1>XXX系统</h1>
 	<div class="main-agileinfo">
-		<h2>请登录</h2>
+<!-- 		<h2>请登录</h2> -->
 		<form action="getEmps" method="post">
 			<input type="text" name="name" class="name" placeholder="用户名" required="">
 			<input type="password" name="password" class="password" placeholder="密码" required="">
@@ -29,7 +29,7 @@
 		</form>
 	</div>
 	<div class="footer-w3l">
-		<p class="agile"> &copy; 2019 Lambent Login Form . All Rights Reserved | Design by <a href="http://www.bootstrapmb.com/">bootstrapmb</a></p>
+		<p class="agile"> &copy; 2019 Lambent Login Form . All Rights Reserved | Design by <a href="http://www.bootstrapmb.com/">qkliang</a></p>
 	</div>
 </body>
 </html>
