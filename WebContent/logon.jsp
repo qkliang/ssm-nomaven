@@ -14,7 +14,7 @@
 	<h1>XXX系统</h1>
 	<div class="main-agileinfo">
 <!-- 		<h2>请登录</h2> -->
-		<form action="getEmps" method="post">
+		<form action="selectByName" method="post">
 			<input type="text" name="name" class="name" placeholder="用户名" required="">
 			<input type="password" name="password" class="password" placeholder="密码" required="">
 			<ul>

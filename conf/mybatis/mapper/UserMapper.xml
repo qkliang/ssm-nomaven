@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lqk.mybatis.dao.UserMapper">
+	<resultMap type="com.lqk.mybatis.bean.User" id="userRM">
+		<result property="userName" column="userName"/>
+		<result property="password" column="password"/>
+	</resultMap>
+	<select id="selectByName" parameterType="map" resultMap="userRM">
+		select * from user_info where 
+		<if test="userName!=null">userName=#{userName}</if>
+		<if test="password!=null">and password=#{password}</if>
+	</select>
+</mapper>
