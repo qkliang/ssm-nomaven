@@ -7,6 +7,7 @@ import java.util.List;
  * @date 2019/08/11
  */
 public class Department {
+	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String departmentName;

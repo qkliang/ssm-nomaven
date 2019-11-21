@@ -7,6 +7,7 @@ package com.lqk.mybatis.bean;
 
 public class Employee {
 	
+	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String lastName;
